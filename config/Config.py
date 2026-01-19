@@ -3,7 +3,7 @@ import cv2 as cv
 
 @dataclass
 class LocalConfig:
-    device_id: str = ""
+    device_id: str = "cam"
     server_ip: str = ""
     apriltags_stream_port: int = 8000
     capture_impl: str = ""

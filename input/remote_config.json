@@ -1,6 +1,6 @@
 {
-    "device_id": "raspi-1",
-    "camera_id": "/dev/video0",
+    "device_id": "cam",
+    "camera_id": "",
     "camera_resolution_width": 1280,
     "camera_resolution_height": 720,
     "camera_framerate": 60,
@@ -8,5 +8,5 @@
     "camera_exposure": 50,
     "camera_gain": 0,
     "camera_denoise": 0,
-    "fiducial_size_mm": 0.1651
+    "fiducial_size_m": 0.1651
 }

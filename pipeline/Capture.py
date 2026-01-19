@@ -52,7 +52,7 @@ class DefaultCapture(Capture):
             self.video = None
 
         if self.video == None:
-            self.video = cv.VideoCapture(config_store.remote_config.camera_id)
+            self.video = cv.VideoCapture(1)
             self.video.set(cv.CAP_PROP_FRAME_WIDTH, config_store.remote_config.camera_resolution_width)
             self.video.set(cv.CAP_PROP_FRAME_HEIGHT, config_store.remote_config.camera_resolution_height)
             self.video.set(cv.CAP_PROP_AUTO_EXPOSURE, config_store.remote_config.camera_auto_exposure)

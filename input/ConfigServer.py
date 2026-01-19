@@ -3,7 +3,7 @@ import time
 
 import ntcore
 
-CONFIG_PATH = "remote_config.json"
+CONFIG_PATH = "/Users/sim/Projects/vision/Vision/input/remote_config.json"
 
 def load_config(path=CONFIG_PATH):
     with open(path, 'r') as file:
@@ -16,7 +16,7 @@ def main():
     config = load_config()
 
     device_id = config.get("device_id")
-    table = inst.getTable(f"/{device_id}/config")
+    table = inst.getTable("/" + device_id + "/config")
 
     camera_id_pub = table.getStringTopic("camera_id").publish()
     camera_resolution_width_pub = table.getIntegerTopic("camera_resolution_width").publish()
