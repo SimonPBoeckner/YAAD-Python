@@ -113,7 +113,7 @@ class NTConfigSource(ConfigSource):
         try:
             config_store.remote_config.tag_layout = json.loads(self.tag_layout_sub.get())
         except:
-            with open("/Users/sim/Projects/vision/Vision/layout/2025-official.json", "r") as layout_file:
+            with open("/Users/sim/Projects/visionPython/Vision/layout/2025-official.json", "r") as layout_file:
                 config_store.remote_config.tag_layout = json.loads(layout_file.read())
             pass
         config_store.remote_config.timestamp = self.timestamp_sub.get()

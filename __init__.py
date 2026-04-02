@@ -28,8 +28,8 @@ import cv2 as cv
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", default="config.json")
-    parser.add_argument("--calibration", default="calibration.json")
+    parser.add_argument("--config", default="/Users/sim/Projects/visionPython/Vision/config.json")
+    parser.add_argument("--calibration", default="/Users/sim/Projects/visionPython/Vision/calibration.json")
     args = parser.parse_args()
 
     config = ConfigStore(LocalConfig(), RemoteConfig())
