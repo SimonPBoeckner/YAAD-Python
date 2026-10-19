@@ -23,7 +23,7 @@ class RemoteConfig:
     camera_exposure: int = 0
     camera_gain: float = 0
     camera_denoise: float = 0
-    fiducial_size_m: float = 0
+    fiducial_size_m: float = 0.1651
     tag_layout: any = None # type: ignore
     timestamp: int = 0
 

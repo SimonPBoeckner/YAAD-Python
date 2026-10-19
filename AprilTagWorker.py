@@ -60,5 +60,5 @@ def apriltag_worker(
         if stream_server.get_client_count() > 0:
             frame = frame.copy()
             
-            [overlay_frame_observation(frame, x) for x in frame_observations]
+            [overlay_frame_observation(frame, x, config) for x in frame_observations]
             stream_server.set_frame(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
